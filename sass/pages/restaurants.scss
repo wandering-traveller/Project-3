@@ -1,0 +1,83 @@
+.pic {
+    img {
+        width: 100%;
+        height: 650px;
+        position: relative;
+        z-index: 0;
+    }
+}
+.menu {
+    background-color: $color-lightgrey;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    padding-bottom: 2em;
+    margin-top: -12em;
+    position: relative;
+    z-index: 1;
+    h2 {
+        font-size: 4em;
+        padding-left: 1em;
+        font-family: $font-heading;
+    }
+    h3 {
+        font-size: 3em;
+        padding-left: 1em;
+    }
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 850px;
+    border-radius: 2em;
+    background-color: white;
+    margin: 2em auto;
+    box-shadow: 0em 0em 0.5em 0.5em $color-midgrey;
+    .tick{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 2em;
+        transition: all 1000ms ease-in;
+    }
+    .price{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        p{
+            margin-right: 0.5em;
+        }
+    }
+    h4 {
+        font-size: 2em;
+        margin-bottom: 0em;
+        padding-left: 0.5em;
+    }
+    p {
+        align-self: flex-end;
+        font-size: 2em;
+        margin-top: 0em;
+        padding-left: 0.6em;
+    }
+    .fa-check-circle {
+        color: white;
+        font-size: 3em;
+        align-self: center;
+        transition: transform 1000ms ease-in-out;
+    }  
+    &:hover {
+        .tick{
+            background-color: $color-tertiary;
+            padding-left: 2.5em;
+            padding-right: 2.5em;
+        }
+        .fa-check-circle{
+            transform: rotate(2turn);
+        }
+    }   
+}
+.center {
+    text-align: center;
+    margin: 4em;
+}

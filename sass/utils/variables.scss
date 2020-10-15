@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-grey: grayscale($color-secondary);
+$color-lightgrey: lighten($color-grey, 20);
+$color-darkgrey: darken($color-grey, 60);
+$color-midgrey: lighten($color-grey, 12);
+
+$font-family: 'Roboto', sans-serif;
+$font-heading: 'Shrikhand', cursive;

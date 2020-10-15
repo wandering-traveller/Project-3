@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Shrikhand, serif;
+  text-align: center;
+}
+
+h3 {
+  padding-left: 1em;
+}
+
+h5 {
+  font-family: Shrikhand, serif;
+  font-size: 1.8em;
+  margin-top: 0em;
+}
+
+footer {
+  background-color: #232323;
+  color: white;
+  padding-left: 2em;
+  padding-bottom: 5em;
+}
+footer .fa-utensils {
+  padding-right: 2em;
+}
+footer .fa-hands-helping {
+  padding-right: 1em;
+}
+footer h5 {
+  padding-top: 1em;
+  font-size: 2.5em;
+  font-style: "Shrikhand", cursive;
+}
+footer p {
+  margin: 1em;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.box {
+  background-color: #efefef;
+  text-align: center;
+  padding-bottom: 4em;
+}
+.box p {
+  margin: 2.5em;
+}
+
+.darker {
+  background-color: #dbdbdb;
+  padding-bottom: 0em;
+}
+.darker P {
+  padding: 1em;
+}
+
+.steps {
+  padding-bottom: 4em;
+}
+.steps p {
+  margin: 1em auto;
+}
+
+.curve {
+  width: 850px;
+  border-radius: 2.5em;
+  background-color: #efefef;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 2.5em auto;
+  box-shadow: 0em 0em 0.4em 0.4em #dbdbdb;
+}
+.curve p {
+  z-index: 1;
+  margin-left: -1.5em;
+}
+.curve .point {
+  display: relative;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  padding: 0.2em 0.75em;
+}
+.curve .fa-mobile-alt {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.curve .fa-list {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.curve .fa-store {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.bggrey {
+  background-color: #efefef;
+  padding-top: 2em;
+  padding-bottom: 10em;
+}
+
+.location {
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  border-radius: 1em;
+  margin: 4em auto 0em auto;
+  box-shadow: 0em 0em 1em 1em #dbdbdb;
+}
+
+.size {
+  width: 700px;
+  height: 375px;
+}
+.size img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.order p {
+  font-size: 2.3em;
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
+
+.like {
+  font-size: 4em;
+  align-self: center;
+  margin-right: 0.5em;
+  margin-bottom: 0.35em;
+}
+.like .fas {
+  display: none;
+}
+.like .far {
+  color: black;
+  position: relative;
+  z-index: 0;
+}
+
+.like:hover .far {
+  display: none;
+}
+.like:hover .fas {
+  display: inherit;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.pic img {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  z-index: 0;
+}
+
+.menu {
+  background-color: #efefef;
+  border-top-left-radius: 3em;
+  border-top-right-radius: 3em;
+  padding-bottom: 2em;
+  margin-top: -12em;
+  position: relative;
+  z-index: 1;
+}
+.menu h2 {
+  font-size: 4em;
+  padding-left: 1em;
+  font-family: "Shrikhand", cursive;
+}
+.menu h3 {
+  font-size: 3em;
+  padding-left: 1em;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 850px;
+  border-radius: 2em;
+  background-color: white;
+  margin: 2em auto;
+  box-shadow: 0em 0em 0.5em 0.5em #dbdbdb;
+}
+.items .tick {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  transition: all 1000ms ease-in;
+}
+.items .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.items .price p {
+  margin-right: 0.5em;
+}
+.items h4 {
+  font-size: 2em;
+  margin-bottom: 0em;
+  padding-left: 0.5em;
+}
+.items p {
+  align-self: flex-end;
+  font-size: 2em;
+  margin-top: 0em;
+  padding-left: 0.6em;
+}
+.items .fa-check-circle {
+  color: white;
+  font-size: 3em;
+  align-self: center;
+  transition: transform 1000ms ease-in-out;
+}
+.items:hover .tick {
+  background-color: #99E2D0;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+.items:hover .fa-check-circle {
+  transform: rotate(2turn);
+}
+
+.center {
+  text-align: center;
+  margin: 4em;
+}
+
+.button {
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border-radius: 3em;
+  padding: 1em 2em;
+  color: white;
+  box-shadow: 0em 0em 0.5em 0.5em #dbdbdb;
+}
+
+.confirm {
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  border-radius: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 6em;
+  padding-left: 6em;
+  color: white;
+  font-size: 1.6em;
+  box-shadow: 0em 0em 0.5em 0.5em #dbdbdb;
+}
+
+/*# sourceMappingURL=style.css.map */
