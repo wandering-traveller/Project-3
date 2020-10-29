@@ -4,10 +4,15 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-lightprimary: lighten($color-primary, 5);
+$color-lightsecondary: lighten($color-secondary, 5);
 $color-grey: grayscale($color-secondary);
 $color-lightgrey: lighten($color-grey, 20);
 $color-darkgrey: darken($color-grey, 60);
 $color-midgrey: lighten($color-grey, 12);
+$color-button: linear-gradient(to bottom, $color-secondary, $color-primary);
+$color-active: linear-gradient(to bottom, $color-lightsecondary, $color-lightprimary);
+$color-hover: linear-gradient($color-primary, $color-secondary);
 
 $font-family: 'Roboto', sans-serif;
 $font-heading: 'Shrikhand', cursive;

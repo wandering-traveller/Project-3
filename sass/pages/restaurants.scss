@@ -81,3 +81,48 @@
     text-align: center;
     margin: 4em;
 }
+.entrees {
+    opacity: 0;
+    animation: fill 3s steps(20, start) forwards;
+}
+.mains {
+    opacity: 0;
+    animation: fill-2 3s steps(20, start) forwards;
+}
+.desserts {
+    opacity: 0;
+    animation: fill-3 3s steps(20, start) forwards;
+}
+@keyframes fill {
+    30% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fill-2 {
+    50% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fill-3 {
+    70% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
