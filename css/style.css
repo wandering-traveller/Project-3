@@ -15,6 +15,7 @@ h1 {
 
 h3 {
   padding-left: 1em;
+  font-size: 2em;
 }
 
 h5 {
@@ -42,6 +43,7 @@ footer h5 {
 }
 footer p {
   margin: 1em;
+  font-size: 1em;
 }
 footer a {
   text-decoration: none;
@@ -55,6 +57,7 @@ footer a {
 }
 .box p {
   margin: 2.5em;
+  font-size: 1.5em;
 }
 
 .darker {
@@ -63,6 +66,7 @@ footer a {
 }
 .darker P {
   padding: 1em;
+  font-size: 1em;
 }
 
 .steps {
@@ -84,6 +88,7 @@ footer a {
 .curve p {
   z-index: 1;
   margin-left: -1.5em;
+  font-size: 1.5em;
 }
 .curve .point {
   display: relative;
@@ -149,6 +154,7 @@ footer a {
   align-self: center;
   margin-right: 0.5em;
   margin-bottom: 0.35em;
+  margin-top: 0.35em;
 }
 .like .fas {
   display: none;
@@ -164,7 +170,7 @@ footer a {
 }
 .like:hover .fas {
   display: inherit;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -172,6 +178,63 @@ footer a {
   z-index: 1;
 }
 
+.loader-size {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.loader-disappear {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  animation: fill-spinner 3s steps(20, start) forwards;
+  background-color: black;
+  padding: 10000px;
+}
+.loader-disappear p {
+  font-size: 2em;
+  color: #99E2D0;
+  text-align: center;
+}
+
+.loader {
+  display: block;
+  border: 1.5em solid #f3f3f3;
+  border-top: 1.5em solid #99E2D0;
+  border-radius: 50%;
+  padding: 2em;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fill-spinner {
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(100%, 100%);
+  }
+}
 .pic img {
   width: 100%;
   height: 650px;
@@ -255,12 +318,67 @@ footer a {
   margin: 4em;
 }
 
+.entrees {
+  opacity: 0;
+  animation: fill 3s steps(20, start) forwards;
+}
+
+.mains {
+  opacity: 0;
+  animation: fill-2 3s steps(20, start) forwards;
+}
+
+.desserts {
+  opacity: 0;
+  animation: fill-3 3s steps(20, start) forwards;
+}
+
+@keyframes fill {
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fill-2 {
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fill-3 {
+  70% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .button {
+  display: inline-block;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   border-radius: 3em;
   padding: 1em 2em;
+  font-size: 1.5em;
   color: white;
   box-shadow: 0em 0em 0.5em 0.5em #dbdbdb;
+  transition: all 1000ms;
+}
+.button:hover {
+  background-image: linear-gradient(to bottom, #ff93e1, #a16be0);
+  box-shadow: 0em 0em 0.5em 0.5em #bcbcbc;
 }
 
 .confirm {
@@ -273,6 +391,10 @@ footer a {
   color: white;
   font-size: 1.6em;
   box-shadow: 0em 0em 0.5em 0.5em #dbdbdb;
+}
+.confirm:hover {
+  background-image: linear-gradient(to bottom, #ff93e1, #a16be0);
+  box-shadow: 0em 0em 0.5em 0.5em #bcbcbc;
 }
 
 /*# sourceMappingURL=style.css.map */

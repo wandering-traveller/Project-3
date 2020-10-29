@@ -4,6 +4,7 @@
     padding-bottom: 4em;
     p {
         margin: 2.5em;
+        font-size: 1.5em;
     }
 }
 .darker {
@@ -11,6 +12,7 @@
     padding-bottom: 0em;
     P {
         padding: 1em;
+        font-size: 1em;
     }
 }
 .steps {
@@ -30,6 +32,7 @@
     p {
         z-index: 1;
         margin-left: -1.5em;
+        font-size: 1.5em;
     }
     .point {
         display: relative;
@@ -91,6 +94,7 @@
     align-self: center;
     margin-right: 0.5em;
     margin-bottom: 0.35em;
+    margin-top: 0.35em;
     .fas {
         display: none;
     }
@@ -106,11 +110,61 @@
     }
     .fas {
         display: inherit;
-        background: -webkit-linear-gradient($color-primary, $color-secondary);
+        background: $color-hover;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         position: relative;
         z-index: 1;
     }   
+}
+.loader-size {
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+.loader-disappear {
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    animation: fill-spinner 3s steps(20, start) forwards;
+    background-color: black;
+    padding: 10000px;
+    p {
+        font-size: 2em;
+        color: $color-tertiary;
+        text-align: center;
+    }
+}
+.loader {
+    display: block;
+    border: 1.5em solid #f3f3f3;
+    border-top: 1.5em solid $color-tertiary;
+    border-radius: 50%;
+    padding: 2em;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes fill-spinner {
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(100%, 100%);
+    }
 }
